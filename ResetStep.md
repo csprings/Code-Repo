@@ -26,6 +26,6 @@ And delete or comment out for the next attribute with “ctrl +/”.
 ```
 4.	Scroll down to Run() method and add the below 2 lines to send “SYSTem:PRESet” SCPI command and left a log to notifying the instrument has been reset.
 ```
-self.vna._io.ScpiCommand(“SYSTem:PRESet”)
+self.vna._io.ScpiCommand(“SYSTem:FPReset”)
 self.Info(“Insturement has been reset”)
 ```
