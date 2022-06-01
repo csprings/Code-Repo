@@ -1,5 +1,6 @@
-[Previous](https://csprings.github.io/Code-Repo/)
+
 ### Reset Test Step Plugin development
+[Previous](https://csprings.github.io/Code-Repo/)
 
 1.	Select ***Reset.py*** file and add(from) VNA class to this Reset.py file.
 ```
