@@ -2,11 +2,17 @@
 
 Here is the webpage, you can copy and paste some code during the training to shorten typing time.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Implement VNA Instrument Plugin
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+in VNA.py file, add below codes
+```markdown
+from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
+```
+add 
+```markdown
+@Attribute(DisplayAttribute, “VNA”, “add VNA Network Analyzer”, “VNA”)
+```
 
 ```markdown
 Syntax highlighted code block
