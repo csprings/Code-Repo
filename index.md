@@ -5,17 +5,17 @@ Here is the webpage, you can copy and paste some code during the training to sho
 
 ### Implement VNA Instrument Plugin
 
-1. in VNA.py file, add below codes
+1. Select ***VNA.py*** file. Add below command line ***before VNA class***.
 ```markdown
 from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
-2. replacing the below Atrribute line with the below new line
+2. Replacing the below ***Atrribute*** line with the below new line
 ```markdown
 @Attribute(DisplayAttribute, “VNA”, “Add a description here”, “Add a group name here”)
 ->
 @Attribute(DisplayAttribute, “VNA”, “add VNA Network Analyzer”, “VNA”)
 ```
-3. add the below 2 linese of command, that will connect Keysight VISA Library to VNA class and name of the instrument
+3. Add the below 2 linese of command, that will connect Keysight VISA Library to VNA class and name of the instrument
 ```markdown
 Self._io = GenericScpiInstrument()
 Self.Name = “VNA”
