@@ -27,4 +27,4 @@ self.vna._io.ScpiCommand(“SYSTem:FPReset”)
 self.Info(“Insturement has been reset”)
 ```
 
-5. Move to the next page [S-Parameter setup plugin](https://csprings.github.io/Code-Repo/SParaTest.html)
+5. Move to the next step [S-Parameter setup plugin](https://csprings.github.io/Code-Repo/SParaTest.html)
