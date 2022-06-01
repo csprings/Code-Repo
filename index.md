@@ -6,22 +6,22 @@ Here is the webpage, you can copy and paste some code during the training to sho
 ### Implement VNA Instrument Plugin
 
 in VNA.py file, add below codes
-```python
+```markdown
 from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
 replacing the below Atrribute line with the below new line
-```python
+```markdown
 @Attribute(DisplayAttribute, “VNA”, “Add a description here”, “Add a group name here”)
 ->
 @Attribute(DisplayAttribute, “VNA”, “add VNA Network Analyzer”, “VNA”)
 ```
 add the below 2 linese of command, that will connect Keysight VISA Library to VNA class and name of the instrument
-```python
+```markdown
 Self._io = GenericScpiInstrument()
 Self.Name = “VNA”
 ```
 Set the setting that add instrument setting property to Setting window in Test Automation software.
-```python
+```markdown
 Prop = self.AddProperty(“string_property_example”, “string example”, String)
 Prop.AddAttribute(DisplayAttribute, “add a display name here”, “Add a description here”, “Add a group name here”)
 ->
