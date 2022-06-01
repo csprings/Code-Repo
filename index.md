@@ -1,7 +1,7 @@
 ## Welcome to Insight PathWave Test Automation Class
 
 Here is the webpage, you can copy and paste some code during the training to shorten typing time.
-
+[Reset Test Step](https://csprings.github.io/Code-Repo/ResetStep.html)
 
 ### Implement VNA Instrument Plugin
 
