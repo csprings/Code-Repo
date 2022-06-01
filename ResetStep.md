@@ -1,9 +1,4 @@
-## Welcome to Insight PathWave Test Automation Class
-
-Here is the webpage, you can copy and paste some code during the training to shorten typing time.
-
-
-### Reset Test Step Plugiu development
+### Reset Test Step Plugin development
 
 1.	Select Reset.py file and add(from) VNA class to this IDN.py file.
 ```
