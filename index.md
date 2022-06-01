@@ -15,31 +15,18 @@ replacing the below Atrribute line with the below new line
 ->
 @Attribute(DisplayAttribute, “VNA”, “add VNA Network Analyzer”, “VNA”)
 ```
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+add the below 2 linese of command, that will connect Keysight VISA Library to VNA class and name of the instrument
+```python
+Self._io = GenericScpiInstrument()
+Self.Name = “VNA”
+```
+Set the setting that add instrument setting property to Setting window in Test Automation software.
+```C#
+Prop = self.AddProperty(“string_property_example”, “string example”, String)
+Prop.AddAttribute(DisplayAttribute, “add a display name here”, “Add a description here”, “Add a group name here”)
+->
+Prop = self.AddProperty(“visa_address”, “TCPIP0::127.0.0.1::hislip0::INSTR”, String)
+Prop.AddAttribute(DisplayAttribute, “VISA Address”, “VISA Address of the instrument to connect”, “VISA”)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/csprings/Code-Repo/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
