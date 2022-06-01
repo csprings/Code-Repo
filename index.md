@@ -6,7 +6,7 @@ Here is the webpage, you can copy and paste some code during the training to sho
 ### Implement VNA Instrument Plugin
 
 in VNA.py file, add below codes
-```markdown
+```python
 from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
 add 
