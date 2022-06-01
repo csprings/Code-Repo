@@ -16,7 +16,7 @@ replacing the below Atrribute line with the below new line
 @Attribute(DisplayAttribute, “VNA”, “add VNA Network Analyzer”, “VNA”)
 ```
 add the below 2 linese of command, that will connect Keysight VISA Library to VNA class and name of the instrument
-```python
+```C#
 Self._io = GenericScpiInstrument()
 Self.Name = “VNA”
 ```
