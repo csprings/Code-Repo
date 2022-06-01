@@ -9,8 +9,10 @@ in VNA.py file, add below codes
 ```python
 from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
-add 
+replacing the below Atrribute line with the below new line
 ```C#
+@Attribute(DisplayAttribute, “VNA”, “Add a description here”, “Add a group name here”)
+:arrow_right:
 @Attribute(DisplayAttribute, “VNA”, “add VNA Network Analyzer”, “VNA”)
 ```
 
