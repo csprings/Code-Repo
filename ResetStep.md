@@ -17,8 +17,9 @@ Prop.AddAttribute(DisplayAttribute, “add a display name here”, “Add a desc
 -> 
 Prop = self.AddProperty(“vna”, None, VNA)
 Prop.AddAttribute(DisplayAttribute, “Instrument”, “The instrument to connect”, “Resources”)
-And delete or comment out for the next attribute with “ctrl +/”.
 ```
+And delete or comment out for the next attribute with ***“ctrl +/”***.
+
 4.	Scroll down to Run() method and add the below 2 lines to send “SYSTem:FPReset” SCPI command and left a log to notifying the instrument has been reset.
 ```
 self.vna._io.ScpiCommand(“SYSTem:FPReset”)
