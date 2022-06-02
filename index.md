@@ -17,8 +17,8 @@ from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
 3. Add the below 2 linese of command, that will connect Keysight VISA Library to VNA class and name of the instrument
 ```markdown
-Self._io = GenericScpiInstrument()
-Self.Name = 'VNA'
+self._io = GenericScpiInstrument()
+self.Name = 'VNA'
 ```
 4. Set the setting that add instrument setting property to Setting window in Test Automation software.
 ```markdown
