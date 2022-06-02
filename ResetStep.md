@@ -4,7 +4,7 @@
 
 1.	Select ***Reset.py*** file and add(from) VNA class to this Reset.py file.
 ```python
-from VNA import *
+from .VNA import *
 ```
 2.	Change ***attribute*** of the Reset TestStep. 
 ```python
