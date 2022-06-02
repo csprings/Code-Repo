@@ -14,7 +14,8 @@ from .VNA import *
 3. One of the settings is choosing a Measurement item from dropdown box. For that feature, we need to make an Enumeration function for dropdown box item.
 ```python
 from enum import Enum
-
+```
+```python
 class Measurement(Enum):
 	S11 = ("S11", "Return loss of port 1")
 	S21 = ("S21", "Insertion loss from port 1 to port 2")
