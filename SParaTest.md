@@ -4,7 +4,9 @@
 1.	We will use several numbers for this test step and one check box that will use Boolean so change the below line
 ```python
 from System import String, Int32 
--> 
+```
+----> 
+```python
 from System Import String, Int32, Double, Boolean
 ```
 
@@ -27,7 +29,9 @@ class Measurement(Enum):
 4. Let’s change the Test Step Display attribute so that we can see both IDN and SParamterTest step under the same group. 
 ```python
 @Attribute(DisplayAttribute, "SParameterTest", "Add a description here", "Add a group name here")
-->
+```
+---->
+```python
 @Attribute(DisplayAttribute, "S-ParameterTest", "Sparameter Test", "VNA")
 ```
 
@@ -35,7 +39,9 @@ class Measurement(Enum):
 ```python
 prop = self.AddProperty("string_property_example", "string example", String)
 prop.AddAttribute(DisplayAttribute, "Add a display name here", "Add a description here", "Add a group name here")
-->
+```
+---->
+```python
 prop = self.AddProperty("vna", None, VNA)
 prop.AddAttribute(DisplayAttribute, "Instrument", "The instrument to connect", "Resources", 1)
 ```
@@ -57,7 +63,9 @@ prop.AddAttribute(DisplayAttribute, "Window", "Window", "VNA Setup", 3)
 prop = self.AddProperty("integer_property_example", 0, Int32)
 prop.AddAttribute(DisplayAttribute, "Add a display name here", "Add a description here", "Add a group name here")
 prop.AddAttribute(UnitAttribute, "Add a display unit here")
-->
+```
+---->
+```python
 prop = self.AddProperty("StartFrequency", 1E+09, Double)
 prop.AddAttribute(DisplayAttribute, "Start Frequency", "Start Frequency of the sweep", "VNA Setup", 4)
 prop.AddAttribute(UnitAttribute, "Hz")
