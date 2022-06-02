@@ -111,5 +111,5 @@ self.vna._io.ScpiCommand(f"SENSe{self.VnaChannel}:FREQuency:STOP {self.StopFrequ
 17. Now, finished setting for the trace, left setting, we’ve not used is the AutoScale check box. If the box is checked, we need to perform autoscale of the trace. So need to check whether the box is checked(True) or unchecked(False). Will add “If” function to check this. In Python, indentation is most important, so don’t forget to check, there has a different indentation between “if” and “self.vna” line
 ```python
 if self.Autoscale:
-    self.vna._io.ScpiCommand(f"DISP:WIND{self.VnaWindow}:Y:AUTO")
+	self.vna._io.ScpiCommand(f"DISP:WIND{self.VnaWindow}:Y:AUTO")
 ```
