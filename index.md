@@ -13,7 +13,7 @@ from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```python
 @Attribute(DisplayAttribute, “VNA”, “Add a description here”, “Add a group name here”)
 ```
-->
+-->
 ```python
 @Attribute(DisplayAttribute, "VNA", "add VNA Network Analyzer", "VNA")
 ```
@@ -27,7 +27,7 @@ self.Name = "VNA"
 Prop = self.AddProperty(“string_property_example”, “string example”, String)
 Prop.AddAttribute(DisplayAttribute, “add a display name here”, “Add a description here”, “Add a group name here”)
 ```
-->
+--->
 ```python
 Prop = self.AddProperty("visa_address", "TCPIP0::127.0.0.1::hislip0::INSTR", String)
 Prop.AddAttribute(DisplayAttribute, "VISA Address", "VISA Address of the instrument to connect", "VISA")
