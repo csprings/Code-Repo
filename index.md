@@ -42,6 +42,7 @@ Prop.AddAttribute(UnitAttribute, 'sec', PreScaling = 1000)
 6.	On the Open Method, add below 2 line of the code, that will add default visa_address to _io instance and open the instrument connection when it calls Open() method. 
 ```
 self._io.VisaAddress  = self.visa_address
+self._io.IoTimeout = self.io_timeout
 self._io.Open()
 ```
 7.	On the Close Method, add a line, that close the instrument connection 
