@@ -11,7 +11,7 @@ from System Import String, Int32, Double, Boolean
 ```python
 from .VNA import *
 ```
-3.	One of the settings is choosing a Measurement item from dropdown box. For that feature, we need to make an Enumeration function for dropdown box item.
+3. One of the settings is choosing a Measurement item from dropdown box. For that feature, we need to make an Enumeration function for dropdown box item.
 ```python
 from enum import Enum
 
