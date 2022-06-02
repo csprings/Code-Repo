@@ -1,4 +1,4 @@
-### VNA Test Plugin development
+### S-Parameter Test Setup Plugin development
 
 1.	We will use several numbers for this test step and one check box that will use Boolean so change the below line
 ```python
@@ -87,3 +87,29 @@ prop = self.AddProperty("MeasurementNum", 1, Int32)
 prop.AddAttribute(DisplayAttribute, "Measurement Number", "Number for the measurement", "Measurement", 8)
 ```
 
+13. Add a SCPI command. To enable new window in the software we will replace the window number to the VnaWindow
+```python
+self.vna._io.ScpiCommand(f"DISPlay:WINDow{self.VnaWindow}:STATE ON")
+```
+
+14. Add 2nd SCPI command. An easy way is that copy the previous line and paste it and change the code in parentheses(). Setup the measurement for the channel
+```python
+self.vna._io.ScpiCommand(f"CALCulate{self.VnaChannel}:PARameter:DEFine:EXT 'Meas{self.MeasurementNum}', '{self.Measure.value[0]}'")
+```
+
+15. Add the next SCPI command. This command will add a trace to the newly created window
+```python
+self.vna._io.ScpiCommand(f"DISPlay:WINDow{self.VnaWindow}:TRACe{self.MeasurementNum}:FEED 'Meas{self.MeasurementNum}'")
+```
+
+16. Rest of 2 line is similar. It will setup the frequency span from 1GHz to 2GHz.
+```python
+self.vna._io.ScpiCommand(f"SENSe{self.VnaChannel}:FREQuency:STARt {self.StartFrequency}")
+self.vna._io.ScpiCommand(f"SENSe{self.VnaChannel}:FREQuency:STOP {self.StopFrequency}")
+```
+
+17. Now, finished setting for the trace, left setting, we’ve not used is the AutoScale check box. If the box is checked, we need to perform autoscale of the trace. So need to check whether the box is checked(True) or unchecked(False). Will add “If” function to check this. In Python, indentation is most important, so don’t forget to check, there has a different indentation between “if” and “self.vna” line
+```python
+if self.Autoscale:
+    self.vna._io.ScpiCommand(f"DISP:WIND{self.VnaWindow}:Y:AUTO")
+```
