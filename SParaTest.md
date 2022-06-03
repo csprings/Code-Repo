@@ -96,7 +96,7 @@ prop = self.AddProperty("MeasurementNum", 1, Int32)
 prop.AddAttribute(DisplayAttribute, "Measurement Number", "Number for the measurement", "Measurement", 8)
 ```
 
-13. Add a SCPI command. To enable new window in the software we will replace the window number to the VnaWindow
+13. Scroll down to Run() function, Add a SCPI command. To enable new window in the software we will replace the window number to the VnaWindow
 ```python
 self.vna._io.ScpiCommand(f"DISPlay:WINDow{self.VnaWindow}:STATE ON")
 ```
