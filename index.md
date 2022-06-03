@@ -11,7 +11,7 @@ from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
 2. Replacing the below ***Atrribute*** line with the below new line
 ```python
-@Attribute(DisplayAttribute, “VNA”, “Add a description here”, “Add a group name here”)
+@Attribute(DisplayAttribute, "VNA", "Add a description here", "Add a group name here")
 ```
 ---->
 ```python
@@ -24,8 +24,8 @@ self.Name = "VNA"
 ```
 4. Set the setting that add instrument setting property to Setting window in Test Automation software.
 ```python
-Prop = self.AddProperty(“string_property_example”, “string example”, String)
-Prop.AddAttribute(DisplayAttribute, “add a display name here”, “Add a description here”, “Add a group name here”)
+Prop = self.AddProperty("string_property_example", "string example", String)
+Prop.AddAttribute(DisplayAttribute, "add a display name here", "Add a description here", "Add a group name here")
 ```
 ---->
 ```python
@@ -34,9 +34,9 @@ Prop.AddAttribute(DisplayAttribute, "VISA Address", "VISA Address of the instrum
 ```
 5.	Add one more property that can change the IO timeout. 
 ```python
-Prop = self.AddProperty(“integer_property_example”, 0, Int32)
-Prop.AddAttribute(DisplayAttribute, “add a display name here”, “Add a description here”, “Add a group name here”)
-Prop.AddAttribute(UnitAttribute, “Add a display unit here”)
+Prop = self.AddProperty("integer_property_example", 0, Int32)
+Prop.AddAttribute(DisplayAttribute, "add a display name here", "Add a description here", "Add a group name here")
+Prop.AddAttribute(UnitAttribute, "Add a display unit here")
 ```
 ---->
 ```python
