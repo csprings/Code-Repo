@@ -17,7 +17,7 @@ from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```python
 @Attribute(DisplayAttribute, "VNA", "add VNA Network Analyzer", "VNA")
 ```
-3. in __init__ function copy and paste below lines
+3. in ***__init__**** function copy and paste below lines
 ```python
 #create _io instance to use GenericScpiInstrument
 self._io = GenericScpiInstrument()
@@ -34,14 +34,14 @@ Prop.AddAttribute(DisplayAttribute, "IO Timeout", "Timeout of the connection", "
 Prop.AddAttribute(UnitAttribute, "sec", PreScaling = 1000)
 ```
 
-4.	On the Open function, add below 3 lines of the code, that will add default visa_address to _io instance and open the instrument connection when it calls Open() method. 
+4.	On the ***Open*** function, add below 3 lines of the code, that will add default visa_address to _io instance and open the instrument connection when it calls Open() method. 
 ```python
 self._io.VisaAddress  = self.visa_address
 self._io.IoTimeout = self.io_timeout
 self._io.Open()
 ```
 
-5.	On the Close Method, add a line, that close the instrument connection 
+5.	On the ***Close*** Method, add a line, that close the instrument connection 
 ```python
 self._io.Close()
 ```
