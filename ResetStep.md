@@ -16,11 +16,7 @@ from .VNA import *
 ```
 3.  Add ***setting attribute***, which will choose and connect the instrument. Similar to the VNA.py, reuse exist example code.
 ```python
-Prop = self.AddProperty("string_property_example", "string example", String)
-Prop.AddAttribute(DisplayAttribute, "add a display name here", "Add a description here", "Add a group name here")
-```
----->
-```python
+# Add VNA instrument to the test step
 Prop = self.AddProperty("vna", None, VNA)
 Prop.AddAttribute(DisplayAttribute, "Instrument", "The instrument to connect", "Resources")
 ```
