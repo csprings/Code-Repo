@@ -48,4 +48,4 @@ self._io.Open()
 self._io.Close()
 ```
 
-6. Let"s move to next step [Reset Test Step](https://csprings.github.io/Code-Repo/ResetStep.md)
+6. Let"s move to next step [Reset Test Step](https://csprings.github.io/Code-Repo/blob/gh-pages/ResetStep.md)
