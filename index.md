@@ -20,6 +20,7 @@ from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
 
 3. On the ***__init__*** function copy and paste below lines
+
 ```python
 #create _io instance to use GenericScpiInstrument
 self._io = GenericScpiInstrument()
