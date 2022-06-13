@@ -9,6 +9,7 @@ Here is the webpage, you can copy and paste some code during the training to sho
 ```python
 from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```
+
 2. Replacing the below ***Atrribute*** line with the below new line
 ```python
 @Attribute(DisplayAttribute, "VNA", "Add a description here", "Add a group name here")
@@ -17,6 +18,7 @@ from OpenTap.Plugins.BasicSteps import GenericScpiInstrument
 ```python
 @Attribute(DisplayAttribute, "VNA", "add VNA Network Analyzer", "VNA")
 ```
+
 3. On the ***__init__*** function copy and paste below lines
 ```python
 #create _io instance to use GenericScpiInstrument
