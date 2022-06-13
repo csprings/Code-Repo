@@ -1,6 +1,6 @@
 
 ### Reset Test Step Plugin development
-[Previous](https://csprings.github.io/Code-Repo/)
+[Previous](https://github.com/csprings/Code-Repo/blob/gh-pages/index.md)
 
 1.	Select ***Reset.py*** file and add(from) VNA class to this Reset.py file.
 ```python
@@ -28,4 +28,4 @@ self.vna._io.ScpiCommand("SYSTem:FPReset")
 self.Info("Insturement has been reset")
 ```
 
-5. Move to the next step [S-Parameter setup plugin](https://csprings.github.io/Code-Repo/SParaTest.html)
+5. Move to the next step [S-Parameter setup plugin](https://github.com/csprings/Code-Repo/blob/gh-pages/SParaTest.md)
