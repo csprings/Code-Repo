@@ -1,5 +1,5 @@
 ### S-Parameter Test Setup Plugin development
-[Previous](https://csprings.github.io/Code-Repo/ResetStep.html)
+[Previous](https://github.com/csprings/Code-Repo/blob/gh-pages/ResetStep.md)
 
 1.	We will use several numbers for this test step and one ***check box*** that will use ***Boolean*** so change the below line
 ```python
